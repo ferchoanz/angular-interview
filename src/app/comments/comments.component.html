@@ -1,0 +1,8 @@
+<ul class="list-group">
+    <li class="list-group-item active text-center">Comentarios</li>
+    <li class="list-group-item"  *ngFor="let commentary of comments">
+        <p>Nombre: {{commentary.name}}</p>
+        <p>Comentario: {{commentary.body}}</p>
+    </li>
+    <button class="btn btn-success" (click)="sendDate()">Emitir</button>
+</ul>
